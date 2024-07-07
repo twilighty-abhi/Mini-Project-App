@@ -1,6 +1,8 @@
 ### Mentme
 
-Mental wellness
+Mental wellness app With mood tracking and daily diary entry feature.
+
+Also has BLog, doctor booking features too.
 
 ### Installation
 
@@ -8,9 +10,11 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app mentme
+bench get-app https://github.com/twilighty-abhi/Mini-Project-App --branch main
+bench --site sitename.local install-app mentme
 ```
+### Other Info
+This contains the DB files to restore an actual version of the webpages too. Find it in `Backup` (Contains dummy data also)
 
 ### Contributing
 
