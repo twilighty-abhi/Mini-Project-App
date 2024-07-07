@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-04-11 09:42:10.191277",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oxu1",
+  "date",
+  "mood",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oxu1",
+   "fieldtype": "Section Break",
+   "label": "How are you?"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "no_copy": 1,
+   "options": "Mood Tracker",
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "mood",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Select your Mood",
+   "options": "rad\ngood\nmeh\nbad\nawful",
+   "print_hide": 1,
+   "reqd": 1,
+   "sort_options": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mood Tracker",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-07 01:28:35.586809",
+ "modified_by": "Administrator",
+ "module": "Mentme",
+ "name": "Mood Tracker",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "mood-tracker/list",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

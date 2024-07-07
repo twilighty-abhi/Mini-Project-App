@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-07 01:11:53.527473",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_here_section",
+  "preferred_date",
+  "email",
+  "name1",
+  "column_break_lgcw",
+  "preferred_time",
+  "age",
+  "reason_for_consultation"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_here_section",
+   "fieldtype": "Section Break",
+   "label": "Book Here"
+  },
+  {
+   "fieldname": "preferred_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Preferred Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lgcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preferred_time",
+   "fieldtype": "Select",
+   "label": "Preferred time",
+   "options": "10 AM\n10:30 AM\n11 AM\n11:30 AM\n12 PM\n12:30 PM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason_for_consultation",
+   "fieldtype": "Select",
+   "label": "Reason for consultation",
+   "options": "General distress\nAnxiety\nMental unwellness",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-07 01:28:16.441375",
+ "modified_by": "Administrator",
+ "module": "Mentme",
+ "name": "Doctor Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

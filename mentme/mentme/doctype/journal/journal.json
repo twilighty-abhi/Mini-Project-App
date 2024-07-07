@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-03 22:25:05.995297",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "daily_journal_section",
+  "date",
+  "rating",
+  "mood_select",
+  "diary_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "daily_journal_section",
+   "fieldtype": "Section Break",
+   "label": "Daily Journal"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Days rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mood_select",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mood",
+   "options": "Happy\nSad\nOptimistic\nReally bad\nCloudy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diary_entry",
+   "fieldtype": "Text",
+   "label": "Diary entry"
+  }
+ ],
+ "links": [],
+ "modified": "2024-07-07 01:28:50.412675",
+ "modified_by": "Administrator",
+ "module": "Mentme",
+ "name": "Journal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
